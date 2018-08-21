@@ -1,7 +1,20 @@
 {
-    "name": "pedroborges/kirby-autogit",
+    "name": "itsdun/kirby-autogit",
     "type": "kirby-plugin",
     "require": {
         "sebastian/git": "^2.1"
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "sebastian/git",
+                "source": {
+                    "url": "https://github.com/itsdun/git.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
 }
